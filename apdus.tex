@@ -1,0 +1,101 @@
+\documentclass[toc=flat,fontsize=11pt,a4paper,titlepage,headsepline,numbers=noenddot, bibliography=totoc]{scrartcl}
+%\setcounter{secnumdepth}{5}
+%\setcounter{tocdepth}{5}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel} 
+
+\begin{document}
+
+In welcher APDU wird die PIN übertragen?
+Sehr wahrscheinlich verschlüsselt, mehr als wahrscheinlich
+Antwort: in keiner; die PIN wird nur lokal in der Software verwendet
+
+
+Erweiterung VirtualSmartcard:
+- RESET darf für RelayOS in der Methode RUN nicht stattfinden, da auf das Attribut self.MF
+	nicht zugegriffen werden kann. => Anpassung in Methode \verb+vicc->run+
+
+\begin{table}[h] % Platzierung
+ \caption{APDUs}
+ \begin{tabular}{ccc}
+  00 & A4 & Select File \\
+  00 & CA & Get Data Plain\\
+  0C & 22 & Manage Security Environment - MSE\\
+  0C & 2A & perform security operation
+ \end{tabular}
+ \label{tab:meinetabelle}
+ \end{table}
+ 0F800A04007F00070202040202830102
+ 
+ Bachelorarbeit teildynamische PIN
+ Pace
+ Abfrage der AusweisApp        CLA INS P1 P2 Lc Data Field              Le
+Select MF                     00   A4 00 0C 02 3F 00
+00A4000C023F00
+Select EF_CARDACCESS          00   A4 02 0C 02 01 1C
+Read Binary                   00   B0 00 00                            80
+Read Binary(short identifier)  00  B0 9C 00                            00
+MSE:AT                        00   22 C1 A4 0F 80 0A ...83 01 password(01|02|03)
+GA: Get Nonce                  10  86 00 00 02 7C 00                   00
+GA: Map Nonce                  10  86 00 00 45 7C 43 81 41 EC Point    00
+GA: Perform Key Agreement      10  86 00 00 45 7C 43 83 41 EC Point    00
+GA: Mutual Authentication      00  86 00 00 0C 7C 0A 85 08 MAC         00
+Reset Retry Counter           00   2C 02 03 06 new PIN                 00
+
+CHAT vom Beispiel 
+
+7F 4C CHAT Länge 12 
+06 - Objektidentifikation  Länge: 09 Wert: 04 00 7F 00 07 03 01 02 02(02 steht für Authentisierungsterminal) 
+53 - TAG für Zugriffsrechte Länge: 05 Wert:  00 00 00 81 00
+
+andere Beispiele
+
+MSE inkl. CHAT
+0022C1A40F800A04007F00070202040202830102 CAN
+0022C1A40F800A04007F00070202040202830103 PIN
+- Vornamen auslesen 
+APDU: 0022
+		C1A4
+			24800A04007F000702020402028301 03 Passwort: PIN
+		7F4C
+			12
+			06 09 04007F0007030102 02 - Rolle: Authentisierungsterminal
+			53 05 0000000800
+			
+- Alterstest + Geburtsdatum auslesen
+APDU: 0022
+		C1A4
+			24800A04007F000702020402028301 03 Passwort: PIN
+		7F4C
+			12
+			06 09 04007F0007030102 02 - Rolle: Authentisierungsterminal
+			53 05 0000008001
+Beim Alterstest ist das letzte Bit im Datenfeld des OI 53 gesetzt
+
+
+Ausführlich in BSI TR-03110-3
+
+Beispiel: NPA-TOOL - Pin ändern
+
+Die Gegenstelle vom MRTD bei PACE ist hier das NPA-TOOL 
+1. APDU: 00 22 C1 A4 0F 80 0A 04 00 7F 00 07 02 02 04 02 02 83 01 03 - Pace starten (MSE inkl. CHAT)
+2. APDU: 10 86 00 00 02 7C 00 00
+3. Eingabe der alten und anschließend der neuen PIN in der Shell
+4. APDU: 10 86 00 00 45 7C 43 81 41 04 0D 1F 53 17 A7 10 E9 65 7F 29 C4 E6 D2 56 E0 F8 30 56 31 42 D3 7E 36 67 39 97 5E 6B 97 37 CE 7A 93 A2 8D B1 CE 3B 07 24 91 83 E9 C0 31 28 01 38 0B 37 88 44 10 75 76 A8 5F A5 6E 39 43 AA EF 31 00
+5. APDU: 10 86 00 00 45 7C 43 83 41 04 69 86 22 E8 CF 40 6A 6A B5 FC 9F 43 12 5D 61 CE ED 48 F6 D0 23 D9 67 EC 8B 51 87 DE 1D 88 7D 45 7B A4 B6 06 5E A8 94 9A 84 3E AA 30 8D 17 BF 0A 09 19 C6 E9 D8 76 C4 53 30 E0 B7 D4 7A 60 FB 02 00
+6. APDU: 00 86 00 00 0C 7C 0A 85 08 36 90 6B A5 41 47 DA 96 00
+7. APDU: 0C 2C 02 03 1D 87 11 01 DF 8A 93 25 03 F7 FF AA 0D 2A 74 19 3E 1E 7A A5 8E 08 AA DD BF 7C 39 A0 FD AE 00 - Kommando zum Ändern der PIN an die Karte
+
+AusweisApp
+Init 
+- ohne A4 * gleich B0 9C (read binary)
+- FF 9A 01 01 00 -> Reiner SCT
+- FF 9A 01 03 00
+- FF 9A 01 06 00
+- FF 9A 01 07 00
+- ControlCode 0x42000D48 - GET_FEATURE_REQUEST
+
+Zur Ermittlung, ob es sich um einen nPA handelt, wird nur das EF.DIR 2F00 (Liste der Kartenapplikationen) ausgelesen - 00B00000FF
+
+
+\end{document}

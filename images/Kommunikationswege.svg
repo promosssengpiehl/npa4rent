@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="15.195cm" height="11.555cm" viewBox="0.188 0.023 15.383 11.578"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="9.210" y="5.533" width="6.105" height="2.158" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="9.210" y="5.533" width="6.105" height="2.158" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="12.262" y="6.346"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+PCSC-Lite (C)</text>
+<text x="12.262" y="7.051"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+pcscd - PC/SC Smart Card Daemon </text>
+<rect x="0.238" y="9.017" width="4.058" height="2.511" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="0.238" y="9.017" width="4.058" height="2.511" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="2.267" y="9.829"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+VICC (PYTHON)</text>
+<text x="2.267" y="10.182"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+virtuelle Smartcard </text>
+<text x="2.267" y="10.535"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+als Relay </text>
+<text x="2.267" y="10.887"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+zu physischem Leser</text>
+<path stroke="none" fill="#FFFFFF" stroke-width="0.100" d="M 5.716,1.072 C 5.422,1.060 4.850,1.316 4.930,1.865 C 5.011,2.414 5.395,2.536 5.556,2.377 C 5.716,2.218 5.305,3.145 6.091,3.389 C 6.877,3.633 7.279,3.243 7.163,2.962 C 7.047,2.682 7.851,3.621 8.226,3.084 C 8.601,2.548 7.842,2.035 8.003,2.109 C 8.163,2.182 8.655,2.084 8.494,1.169 C 8.333,0.255 6.886,0.962 7.047,0.828 C 7.208,0.694 6.806,0.023 6.306,0.157 C 5.806,0.291 5.770,0.535 5.717,1.071 L 5.716,1.072 "/>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d="M 5.716,1.072 C 5.422,1.060 4.850,1.316 4.930,1.865 C 5.011,2.414 5.395,2.536 5.556,2.377 C 5.716,2.218 5.305,3.145 6.091,3.389 C 6.877,3.633 7.279,3.243 7.163,2.962 C 7.047,2.682 7.851,3.621 8.226,3.084 C 8.601,2.548 7.842,2.035 8.003,2.109 C 8.163,2.182 8.655,2.084 8.494,1.169 C 8.333,0.255 6.886,0.962 7.047,0.828 C 7.208,0.694 6.806,0.023 6.306,0.157 C 5.806,0.291 5.770,0.535 5.717,1.071 L 5.716,1.072 "/>
+<text x="6.854" y="1.980"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+Internet</text>
+<rect x="1.377" y="0.917" width="0.699" height="1.630" fill="#B3B3B3" stroke="none" stroke-width="0"/>
+<rect x="1.377" y="0.917" width="0.699" height="1.630" fill="none" stroke="#000000" stroke-width="0.080" />
+<rect x="1.447" y="1.014" width="0.559" height="0.186" fill="none" stroke="#000000" stroke-width="0.010" />
+<rect x="1.447" y="1.201" width="0.559" height="0.186" fill="none" stroke="#000000" stroke-width="0.010" />
+<rect x="1.447" y="1.387" width="0.559" height="0.186" fill="none" stroke="#000000" stroke-width="0.010" />
+<rect x="1.447" y="1.573" width="0.559" height="0.186" fill="none" stroke="#000000" stroke-width="0.010" />
+<rect x="1.447" y="1.797" width="0.349" height="0.112" fill="none" stroke="#000000" stroke-width="0.010" />
+<ellipse cx="1.971" cy="1.816" rx="0.024" ry="0.024" fill="#00FF00" stroke="none"  /><ellipse cx="1.971" cy="1.816" rx="0.024" ry="0.024" fill="none" stroke="#000000"  stroke-width="0.010" /><ellipse cx="1.971" cy="1.890" rx="0.024" ry="0.024" fill="#FFFF00" stroke="none"  /><ellipse cx="1.971" cy="1.890" rx="0.024" ry="0.024" fill="none" stroke="#000000"  stroke-width="0.010" /><rect x="1.832" y="1.834" width="0.084" height="0.075" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="1.832" y="1.834" width="0.084" height="0.075" fill="none" stroke="#000000" stroke-width="0.010" />
+<path stroke="#000000" fill="none" stroke-width="0.010"  d="M 1.494,2.058 L 1.494,2.465 "/>
+<path stroke="#000000" fill="none" stroke-width="0.010"  d="M 1.610,2.058 L 1.610,2.465 "/>
+<path stroke="#000000" fill="none" stroke-width="0.010"  d="M 1.727,2.058 L 1.727,2.465 "/>
+<path stroke="#000000" fill="none" stroke-width="0.010"  d="M 1.843,2.058 L 1.843,2.465 "/>
+<path stroke="#000000" fill="none" stroke-width="0.010"  d="M 1.960,2.058 L 1.960,2.465 "/>
+<path stroke="#000000" fill="none" stroke-width="0.010"  d="M 2.076,2.058 L 2.076,2.465 "/>
+<polygon fill="#999999" stroke="none" stroke-width="0.010" points="1.238,2.687 1.377,2.407 1.377,2.547 2.076,2.547 2.076,2.407 2.262,2.687 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.010"  points="1.238,2.687 1.377,2.407 1.377,2.547 2.076,2.547 2.076,2.407 2.262,2.687 "/>
+<rect x="11.500" y="1.100" width="1.544" height="1.158" fill="#B3B3B3" stroke="none" stroke-width="0"/>
+<rect x="11.500" y="1.100" width="1.544" height="1.158" fill="none" stroke="#000000" stroke-width="0.050" />
+<rect x="11.667" y="1.267" width="1.210" height="0.798" fill="#000000" stroke="none" stroke-width="0"/>
+<polygon fill="#B3B3B3" stroke="none" stroke-width="0.050" points="11.709,2.258 12.503,2.258 12.503,2.438 11.751,2.438 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="11.709,2.258 12.503,2.258 12.503,2.438 11.751,2.438 "/>
+<polygon fill="#B3B3B3" stroke="none" stroke-width="0.050" points="12.503,2.258 12.835,2.258 12.793,2.438 12.503,2.438 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="12.503,2.258 12.835,2.258 12.793,2.438 12.503,2.438 "/>
+<rect x="12.557" y="2.312" width="0.072" height="0.072" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="12.557" y="2.312" width="0.072" height="0.072" fill="none" stroke="#000000" stroke-width="0.025" />
+<polygon fill="#B3B3B3" stroke="none" stroke-width="0.050" points="12.117,2.438 12.426,2.438 12.426,2.528 12.581,2.528 12.581,2.618 11.963,2.618 11.963,2.528 12.117,2.528 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="12.117,2.438 12.426,2.438 12.426,2.528 12.581,2.528 12.581,2.618 11.963,2.618 11.963,2.528 12.117,2.528 "/>
+<text x="2.350" y="1.400"  fill="#000000" text-anchor="start" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+Port 35963</text>
+<line x1="4.760" y1="1.810" x2="2.545" y2="1.804" stroke="#000000" stroke-width="0.050" />
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="5.135,1.811 4.635,2.059 4.760,1.810 4.636,1.559 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="5.135,1.811 4.635,2.059 4.760,1.810 4.636,1.559 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="2.170,1.803 2.671,1.554 2.545,1.804 2.669,2.054 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="2.170,1.803 2.671,1.554 2.545,1.804 2.669,2.054 "/>
+<line x1="8.956" y1="1.833" x2="11.054" y2="1.849" stroke="#000000" stroke-width="0.050" />
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="8.581,1.830 9.083,1.584 8.956,1.833 9.079,2.084 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="8.581,1.830 9.083,1.584 8.956,1.833 9.079,2.084 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="11.429,1.852 10.927,2.098 11.054,1.849 10.931,1.598 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="11.429,1.852 10.927,2.098 11.054,1.849 10.931,1.598 "/>
+<rect x="10.188" y="9.450" width="5.062" height="1.806" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="10.188" y="9.450" width="5.062" height="1.806" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="12.719" y="10.263"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+libvpcd.so (VPCD)</text>
+<text x="12.719" y="10.615"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+virtuelles Lesegerät</text>
+<rect x="9.221" y="7.817" width="6.112" height="1.453" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="9.221" y="7.817" width="6.112" height="1.453" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="12.277" y="8.629"  fill="#000000" text-anchor="middle" font-size="0.35" font-family="sans" font-style="normal" font-weight="400">
+IFDHandler</text>
+<line x1="4.457" y1="10.289" x2="10.027" y2="10.332" stroke="#000000" stroke-width="0.050" stroke-dasharray="0.50,0.50"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.050"  points="4.903,10.043 4.401,10.289 4.899,10.543 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.050"  points="9.580,10.579 10.082,10.332 9.584,10.079 "/>
+<line x1="1.831" y1="3.122" x2="2.161" y2="8.537" stroke="#000000" stroke-width="0.050" />
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="1.808,2.747 2.088,3.231 1.831,3.122 1.589,3.261 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="1.808,2.747 2.088,3.231 1.831,3.122 1.589,3.261 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="2.184,8.911 1.904,8.427 2.161,8.537 2.403,8.397 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="2.184,8.911 1.904,8.427 2.161,8.537 2.403,8.397 "/>
+<line x1="12.270" y1="2.753" x2="12.266" y2="5.052" stroke="#000000" stroke-width="0.050" />
+<polyline fill="none" stroke="#000000" stroke-width="0.050"  points="12.519,3.198 12.270,2.697 12.019,3.197 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.050" points="12.265,5.427 12.016,4.927 12.266,5.052 12.516,4.928 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.050"  points="12.265,5.427 12.016,4.927 12.266,5.052 12.516,4.928 "/>
+</svg>

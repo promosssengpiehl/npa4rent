@@ -1,0 +1,79 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{TR3110}{online}{}
+  \field{sortinit}{B}
+  \field{title}{BSI TR-03110 Technical Guideline Advanced Security Mechanisms
+  for Machine Readable Travel Documents and eIDAS Token}
+  \verb{url}
+  \verb https://www.bsi.bund.de/EN/Publications/TechnicalGuidelines/TR03110/BSI
+  \verb TR03110.html
+  \endverb
+  \field{urlday}{28}
+  \field{urlmonth}{02}
+  \field{urlyear}{2016}
+\endentry
+
+\entry{TR3119}{online}{}
+  \field{sortinit}{B}
+  \field{title}{BSI TR-03119 Requirements for Smart Card Readers Supporting eID
+  and eSign Based on Extended Access Control}
+  \verb{url}
+  \verb https://www.bsi.bund.de/DE/Publikationen/TechnischeRichtlinien/tr03119/
+  \verb index_htm.html
+  \endverb
+  \field{urlday}{28}
+  \field{urlmonth}{02}
+  \field{urlyear}{2016}
+\endentry
+
+\entry{TR3127}{online}{}
+  \field{sortinit}{B}
+  \field{title}{BSI TR-03127 - Architektur elektronischer Personalausweis und
+  elektronischer Aufenthaltstitel}
+  \verb{url}
+  \verb https://www.bsi.bund.de/DE/Publikationen/TechnischeRichtlinien/tr03127/
+  \verb tr-03127.html
+  \endverb
+  \field{urlday}{28}
+  \field{urlmonth}{02}
+  \field{urlyear}{2016}
+\endentry
+
+\entry{ISO14443}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {ISO/IEC}{I.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {publisher}%
+  }
+  \strng{namehash}{I1}
+  \strng{fullhash}{I1}
+  \field{sortinit}{I}
+  \field{title}{ISO/IEC 14443-3}
+  \field{year}{2011}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

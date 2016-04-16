@@ -1,0 +1,84 @@
+
+\verb+http://www.internet-sicherheit.de/typo3temp/pics/5f8b961378.png: Bild ablauf_pace.png+
+
+In BSI TR-03119 Version 1.1 (deutsch) Anhang D sind die Kommandos beschrieben.
+
+\subsection{Aufgaben des Filters}
+\begin{itemize}
+  \item Unterscheidung der Art der Karten (Betriebssystem); beim Relay sollte schärfer
+  		gefiltert werden, da die Kommandos an eine reale Karte übergeben werden
+  \item Unterscheidung der physischen Karten bei der Relay-Funktion - falls machbar
+  \item evtl. kartenzustandsbasierte Filterung
+  \item Aktion beim Matchen einer Regel; Antwort senden ja/nein 
+  \item Evtl. könnte man auch Quell-IP-Adresse sperren; dieses dann aber eher als eigene
+  		Schutzfunktion - Authentifikation
+  \item 
+\end{itemize}
+Der Filter wird beim Starten des VICC aus einer Textdatei gelesen. In welcher Notation
+die Regeln definiert werden, steht noch aus. Möglich wäre:
+\begin{itemize}
+  \item ASN1
+  \item reguläre Ausdrücke
+  \item eigene Definition
+\end{itemize}
+
+\subsection{Aussehen des Filters}
+\begin{table}[h] % Platzierung
+ \caption{Syntax Filter}
+ \begin{tabular}{ccll}
+  00 & 84 & reject & 0x6800 \\
+  00 & 20 & reject & 0x6D00 \\
+ \end{tabular}
+ \label{tab:meinetabelle}
+ \end{table}
+ 
+
+\section{Software}
+\begin{itemize}
+  \item libpcsclite - $1.8.10$ (selbstkompiliert)
+  \item libccid - $1.4.14$ (selbstkompiliert); Treiber für den REINER\textit{SCT}
+  \item vsmartcard GITHUB (Stand 31.01.2014); der VPCD-Treiber darf dem PCSCD 
+   nicht als symbolischer Link bekannt gemacht werden
+  \item pcsc-tools - $1.4.21$ (selbstkompiliert); zum Testen von APDUs
+\end{itemize}
+
+
+Beispiel für Literaturverzeichnis (aus TR 03126-1: Einsatzgebiet „eTicketing im öffentlichen Personenverkehr“):
+13 Literaturverzeichnis
+[RIKCHA]
+Bundesamt für Sicherheit in der Informationstechnik: RFID – Security Aspects and Prospec-
+tive Applications of RFID Systems,
+http://www.bsi.de/english/publications/studies/rfid/RIKCHA_en.htm, Abruf vom 15.09.2008
+[GSHB]
+Bundesamt für Sicherheit in der Informationstechnik: IT-Grundschutz Kataloge,
+http://www.bsi.de/gshb/deutsch/index.htm, Abruf vom 15.09.2008
+[ISO 24014]
+International Organization for Standardization: ISO 24014-1:2007 Public transport - Interop-
+erable Fare Management System - Part 1: Architecture,
+http://www.iso.org/iso/iso_catalogue.htm, Abruf vom 15.09.2008
+[IOPTA]
+DIN EN15320:2008-02 Identifikationskartensysteme - Landgebundene Transportanwendun-
+gen - Interoperable Anwendungen für den öffentlichen Verkehr – Rahmenwerk (Interoperable
+Public Transport Application - IOPTA),
+http://www.beuth.de/langanzeige/DIN+EN+15320/de/97592959.html, Abruf vom 15.09.2008
+[VDV_KM]
+Verband Deutscher Verkehrsunternehmen (VDV): Spezifikation des Kundenmediums der
+VDV-Kernapplikation
+[ISO 7816-13]
+International Organization for Standardization: ISO 7816-13 Identification Cards - Integrated
+Circuit Cards - Part 13: Commands for application management in a multi-application envi-
+ronment, http://www.iso.org/iso/iso_catalogue.htm, Abruf vom 15.09.2008
+[ALGK_BSI]
+Bundesamt für Sicherheit in der Informationstechnik: Technische Richtlinie Kryptographische
+Verfahren: Empfehlungen und Schlüssellängen (BSI- TR-02102),
+http://www.bsi.de/literat/tr/tr02102/index.htm, Abruf vom 15.09.2008
+[TR_eCARD]
+Bundesamt für Sicherheit in der Informationstechnik: Technische Richtlinie für die eCard-
+Projekte der Bundesregierung (BSI-TR-03116), http://www.bsi.de/literat/tr/tr03116/index.htm,
+Abruf vom 15.09.2008
+[BSI_PICC_TestSpec]
+Bundesamt für Sicherheit in der Informationstechnik: Prüfkriterien für elektronische Reisedo-
+kumente / ePassport Conformity Testing (BSI TR-03105), Teil 2 PICC - Prüfungen auf den
+Ebenen 1-4: Bitübertragungs-, Sicherungs-, Vermittlungs- und Transportschicht / Test Plan
+For ICAO Compliant MRTD with Secure Contactless Integrated Circuit - Version 1.03.1,
+http://www.bsi.de/literat/tr/tr03105/index.htm, Abruf vom 15.09.2008

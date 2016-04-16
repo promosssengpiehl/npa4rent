@@ -1,0 +1,8 @@
+.project
+.texlipse
+.settings
+
+tmp
+*.aux
+*.log
+*.gz
