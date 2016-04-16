@@ -1,8 +1,8 @@
-.project
-.texlipse
-.settings
-
-tmp
-*.aux
-*.log
-*.gz
+/studienarbeit.bbl
+/studienarbeit.bcf
+/studienarbeit.blg
+/studienarbeit.dvi
+/studienarbeit.pdf
+/studienarbeit.ps
+/studienarbeit.synctex.gz
+/tmp/
