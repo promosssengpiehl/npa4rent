@@ -120,6 +120,9 @@ die Daten und Funktionen des nPA  wird durch die \textit{General Authentication 
 \end{itemize}
 Die letzten drei Schritte werden als \textit{EAC} (Extended Access Control) bezeichnet.
 
+%ToDo:
+Das Berechtigungszertifikat ist nicht nur für entfernte Dienstanbieter - auch die Lesegeräte sind mit einem solchem Zertifikat ausgestattet. Somit sind dem Lesegerät nur bestimmte Rechte zugewiesen; hierbei denke ich insbesondere an IS-Terminals, an denen bestimmte Daten auch ohne eID-Pin -nur mit CAN ausgelesen werden dürfen.
+
 In einem für das Remoteterminal(Dienstanbieter) ausgestelltem \textit{Berechtigungszertifikat} sind dessen Zugriffsrechte hinterlegt. Bei der Abfrage von Daten durch 
 das Remoteterminal werden die angestrebten Rechte in einem \textit{Card Holder Authorization Template} (CHAT) übergeben und dem Anwender vor der Ausführung 
 von PACE präsentiert. Er hat die Möglichkeit diese Rechte einzuschränken. Das PACE-Protokoll leitet anschließend aus einem schwachen Geheimnis - der eID-PIN oder 
